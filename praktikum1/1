@@ -1,0 +1,6 @@
+class buku {
+		var $JudulBuku; 
+		var $Pengarang;
+		var $Penerbit; 
+		var $TahunTerbit; 
+}
