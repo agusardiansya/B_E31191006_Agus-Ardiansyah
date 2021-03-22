@@ -1,0 +1,1 @@
+ <p>contoh peneeapan multiple view yang dipamggil dari satu Controller</p>
