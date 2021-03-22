@@ -9,9 +9,9 @@
 		public $ekonomi;
 		public $sosiologi;
 		public $akutansi;
-        public $geografi;
+        	public $geografi;
 
-		// Membuat Fungsi untuk menentukan jurusan informatika
+		// Membuat Fungsi untuk menentukan jurusan ilmusejarah
 		public function ilmusejarah() {
 			if ($this -> sejarah > 85 && $this -> sosiologi > 85) {
 				$hasil = "Rekomendasi";
@@ -21,7 +21,7 @@
 			return $hasil;
 		}
 
-		// Membuat Fungsi untuk menentukan jurusan teknik
+		// Membuat Fungsi untuk menentukan jurusan akutansi
 		public function akutansi() {
 			if ($this -> ekonomi > 85 && $this -> matematika> 85) {
 				$hasil = "Rekomendasi";
@@ -31,7 +31,7 @@
 			return $hasil;
 		}
 
-		// Membuat Fungsi untuk menentukan jurusan kesehatan
+		// Membuat Fungsi untuk menentukan jurusan sosiologi
 		public function sosiologi() {
 			if ($this -> sosiologi > 85 && $this -> geografi> 85) {
 				$hasil = "Rekomendasi";
@@ -48,7 +48,7 @@
 			$c=$this -> ekonomi;
 			$d=$this -> sosiologi;
 			$e=$this -> akutansi;
-            $e=$this -> geografi;
+            		$e=$this -> geografi;
 			$avg=($sejarah+$matematika+$ekonomi+$sosiologi+$akutansi+$geografi)/6;
 			return $avg;
 		}
@@ -85,16 +85,16 @@
 	echo "<br>";
 	echo "Nilai akutansi : " .$person -> akutansi="85";
 	echo "<br>";
-    echo "Nilai geografi : " .$person -> geografi="90";
+    	echo "Nilai geografi : " .$person -> geografi="90";
 	echo "<br>";
 	
-	echo "<h3>Jurusan Informatika </h3>";
+	echo "<h3>Jurusan ilmusejarah </h3>";
 	echo $person -> ilmusejarah();
 	echo "<br>";
-	echo "<h3>Jurusan Teknik </h3>";
+	echo "<h3>Jurusan akutansi </h3>";
 	echo $person -> akutansi();
 	echo "<br>";
-	echo "<h3>Jurusan kesehatan </h3>";
+	echo "<h3>Jurusan sosiologi </h3>";
 	echo $person -> sosiologi();
 	echo "<br>";
 	echo "<h4>Rata Rata</h4>";
